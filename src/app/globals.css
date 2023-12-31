@@ -92,11 +92,15 @@ body {
   background-color: #001529;
   color: rgb(183, 183, 183);
   padding: 5px 20px;
+  position: fixed;
+  width: 100vw;
   box-sizing: border-box;
   transition: 500ms;
+  z-index: 99;
 }
 .bodySection{
   min-height: 81vh;
+  margin-top: 50px;
 }
 .footer{
   display: flex;
@@ -106,8 +110,8 @@ body {
   flex-wrap: wrap;
   font-size: .7em;
   font-weight: bold;
-  margin-top: 20px;
-  padding: 20px;
+  padding: 0 10px 30px 0;
+  opacity: .7;
 }
 
 a {
@@ -121,16 +125,17 @@ a {
   }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
   .menu-wrapper-guest{
       padding: 10px 20px;
+      background-image: linear-gradient(to right, #001529, #003d72);
   }
   .menu-windows{
       display: none;
   }
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 800px){
   .menu-mobile{
       display: none;
   }

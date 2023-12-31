@@ -1,0 +1,270 @@
+.header-home{
+    background-image: url('/baseImg.jpg');
+    background-repeat: repeat-x;
+    background-size: 20vw;
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    padding: 20px;
+    min-height: 60vh;
+    box-sizing: border-box;
+}
+.product-slider-wrap{
+    width: 500px;
+}
+.product-slider{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 30px 20px;
+    background-image: linear-gradient(to right, #001529, #003d72);
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-size: large;
+    box-shadow: 5px 5px 10px rgb(17, 14, 77);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.product-slider-title{
+    margin-bottom: 20px;
+}
+.text-brand{
+    font-size: 1.5em;
+    transition: 500ms;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.short-desc{
+    text-align: center;
+    color: rgb(236, 234, 234);
+}
+.short-desc p{
+    text-align: justify;
+}
+.why-us-wrap{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    color: white;
+    padding: 40px 20px;
+    background-image: linear-gradient(to right, #001529, #003d72);
+    font-weight: bold;
+    font-style: italic;
+    box-sizing: border-box;
+}
+.why-us-point{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 65vw;
+    gap: 10px;
+    box-sizing: border-box;
+}
+.why-us-item{
+    width: 40%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.why-us-item-img{
+    border: 2px solid blue;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background-color: #001529;
+    overflow: hidden;
+}
+.jaminan-lulus{
+    text-align: center;
+    font-style: normal;
+    width: 20vw;
+    border: 4px solid rgb(191, 191, 191);
+}
+.jaminan-lulus-img{
+    width: 200px;
+    height: 200px;
+    border: 2px solid blue;
+    border-radius: 50%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.about-us-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    box-sizing: border-box;
+    gap: 20px;
+}
+.about-desc{
+    text-align: justify;
+    flex: 2;
+}
+.about-img{
+    flex: 1;
+}
+.section{
+    margin: 50px auto;
+}
+.section h3{
+    text-align: center;
+}
+.section .section-divider{
+    margin-bottom: 0;
+}
+.card-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    box-sizing: border-box;
+}
+.product-item{
+    background-color: rgb(248, 248, 248);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgb(219, 219, 219);
+    box-sizing: border-box;
+}
+.product-title{
+    text-align: center;
+    margin: 20px auto;
+}
+.price{
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    color: green;
+    font-style: italic;
+    margin-top: 5px;
+}
+.price-startat{
+    padding: 0 5px;
+}
+.benefits{
+    font-size: 13px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.text-muted{
+    color: #a4a4a4;
+}
+.form-wrap{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgb(248, 248, 248);
+}
+.form{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(139, 139, 139);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgb(199, 199, 199);
+}
+.jaminan-lulus-icon{
+    font-size: 195px;
+}
+.sosmed-wrap{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    font-style: italic;
+}
+.sosmed-item{
+    display: flex;
+    gap: 10px;
+}
+.company-loc{
+    width: 100%;
+    border: 1px solid black;
+    min-height: 200px;
+    margin-top: 30px;
+}
+.software-wrap{
+    display: flex;
+    justify-content: space-evenly;
+}
+.software-item{
+    width: 100px;
+    font-size: 100px;
+}
+
+
+
+@media only screen and (max-width: 800px){
+    .product-slider-wrap{
+        width: 90vw;
+    }
+    .short-desc{
+        padding: 0 20px;
+        color: #003d72;
+    }
+    .text-brand{
+        border: 1px solid #003d72;
+        box-shadow: 2px 2px 5px #003d72;
+    }
+    .header-home{
+        background-size: 100vw;
+        min-height: 70vh;
+    }
+    .why-us-point{
+        width: 100vw;
+    }
+    .why-us-item{
+        width: 80vw;
+        gap: 30px;
+        padding: 10px;
+        border-bottom: 1px solid rgb(99, 99, 99);
+    }
+    .why-us-wrap{
+        padding: 30px 0;
+    }
+    .why-us-item-img{
+        border: 2px solid blue;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+    }
+    .jaminan-lulus{
+        width: 100vw;
+    }
+    .about-us-wrap{
+        flex-direction: column;
+    }
+    .icon-why-us{
+        font-size: 60px;
+        margin-top: 7px;
+    }
+    .software-item{
+        width: 50px;
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 800px){
+    .form{
+        width: 35vw;
+    }
+    .icon-why-us{
+        font-size: 80px;
+        margin-top: 5px;
+    }
+}

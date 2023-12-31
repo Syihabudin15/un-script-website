@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /usr
+
+Sitemap: https://un-script.vercel.app/sitemap.xml
