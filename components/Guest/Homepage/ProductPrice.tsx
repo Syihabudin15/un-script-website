@@ -1,3 +1,4 @@
+"use client"
 import { Button, Divider } from "antd";
 import style from "../../../src/app/(Guest)/Home.module.css";
 import Link from "next/link";

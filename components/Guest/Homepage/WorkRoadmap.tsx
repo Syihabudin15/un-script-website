@@ -1,3 +1,4 @@
+"use client"
 import { Steps } from "antd";
 import { CommentOutlined, FileDoneOutlined , CoffeeOutlined, LoadingOutlined, TeamOutlined, SmileOutlined } from "@ant-design/icons";
 export default function WorkRoadmap(){
