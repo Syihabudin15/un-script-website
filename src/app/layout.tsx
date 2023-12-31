@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { AntdRegistry } from '@ant-design/nextjs-registry'
 
 
 export const metadata: Metadata = {
@@ -13,7 +14,8 @@ export const metadata: Metadata = {
     description: 'Penyedia jasa pembuatan Skripsi, Tesis, Aplikasi Mobile, Website dan Undangan Online',
     url: '/',
     images: '/baseImg.jpg'
-  }
+  },
+  alternates: {canonical: '/'}
 }
 
 export default function RootLayout({
@@ -24,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body translate='yes'>
-        {children}
+        <AntdRegistry>{children}</AntdRegistry>
         <SpeedInsights/>
         <Analytics/>
       </body>

@@ -9,7 +9,7 @@ export default function ProductPrice(){
             {items.map((e,i) => (
                 <section title={`Pembuatan ${e.name}`} key={i} className={style['product-item']} data-aos="fade-up" data-aos-duration="1000">
                     <div className={style['product-title']}>
-                        <h4>{e.name.toUpperCase()}</h4>
+                        <h3>{e.name.toUpperCase()}</h3>
                     </div>
                     <div>
                         {e.pricelist.map((p,ind) => (

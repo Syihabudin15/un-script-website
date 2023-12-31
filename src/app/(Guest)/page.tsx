@@ -34,17 +34,17 @@ export default function HomePage(){
             <WhyUsDiagram/>
         </div>
         <div className={style["section"]}>
-            <h3>Tentang Kami</h3>
+            <h2>Tentang Kami</h2>
             <Divider className={style['section-divider']}/>
             <AboutUs/>
         </div>
         <div className={style["section"]}>
-            <h3>Harga Produk</h3>
+            <h2>Harga Produk</h2>
             <Divider className={style['section-divider']}/>
             <ProductPrice/>
         </div>
         <div className={style["section"]}>
-            <h3>Roadmap Pengerjaan</h3>
+            <h2>Roadmap Pengerjaan</h2>
             <Divider className={style['section-divider']}/>
             <WorkRoadmap/>
         </div>

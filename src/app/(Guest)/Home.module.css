@@ -115,8 +115,9 @@
 .section{
     margin: 50px auto;
 }
-.section h3{
+.section h2{
     text-align: center;
+    font-size: 1em;
 }
 .section .section-divider{
     margin-bottom: 0;
@@ -140,6 +141,9 @@
 .product-title{
     text-align: center;
     margin: 20px auto;
+}
+.product-title h3{
+    font-size: 1em;
 }
 .price{
     display: flex;
