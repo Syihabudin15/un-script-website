@@ -25,10 +25,10 @@ export default function Comments(){
                 </div>
                 <div>
                     <Form labelCol={{span: 7}}>
-                        <Form.Item label="Nama">
+                        <Form.Item label="Nama" name={'name'}>
                             <Input />
                         </Form.Item>
-                        <Form.Item label="Komentar">
+                        <Form.Item label="Komentar" name={'comment'}>
                             <Input.TextArea style={{height: 100}} />
                         </Form.Item>
                         <Form.Item >

@@ -1,10 +1,10 @@
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-    title: `Tugas Akhir | ${process.env.NEXT_PUBLIC_BASE_NAME}`,
+    title: `Tugas Akhir`,
     description: "Un Script jasa pembuatan tugas akhir Skripsi dan Tesis",
     openGraph: {
-        title: `Tugas Akhir | ${process.env.NEXT_PUBLIC_BASE_NAME}`,
+        title: `Tugas Akhir`,
         description: "Un Script jasa pembuatan tugas akhir Skripsi dan Tesis",
         url: '/ta'
     }

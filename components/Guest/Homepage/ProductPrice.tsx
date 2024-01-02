@@ -27,7 +27,7 @@ export default function ProductPrice(){
                         ))}
                     </div>
                     <div>
-                        <Link href={e.url}>
+                        <Link href={e.url} target="_black" title={`Order ${e.name}`}>
                             <Button type="primary" block>ORDER</Button>
                         </Link>
                     </div>

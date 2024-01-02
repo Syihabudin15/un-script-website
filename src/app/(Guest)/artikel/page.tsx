@@ -3,16 +3,17 @@ import style from "./Artikel.module.css";
 import { CardsArticle, ShortTools } from "../../../../components/Guest/Artikel";
 
 export const metadata: Metadata = {
-    title: `Daftar Artikel | ${process.env.NEXT_PUBLIC_BASE_NAME}`,
-    description: `Artikel di ${process.env.NEXT_PUBLIC_BASE_NAME} berisi banyak hal, mulai dari Daftar Pustaka Skripsi, Keseharian, Tutorial, IT, Programming, Data Mining, Bisnis, SEO dan lain nya`,
+    title: "Daftar Artikel",
+    description: `Artikel di ${process.env.NEXT_PUBLIC_BASE_NAME} berisi banyak hal, mulai dari Daftar Pustaka Skripsi, Keseharian, Tutorial, IT, Programming, Data Mining, Bisnis, SEO dan lain nya. Bingung cari Dapus? Yo di sini aja`,
     openGraph: {
         url: '/artikel',
-        title: `Daftar Artikel | ${process.env.NEXT_PUBLIC_BASE_NAME}`,
-        description: `Artikel di ${process.env.NEXT_PUBLIC_BASE_NAME} berisi banyak hal, mulai dari Daftar Pustaka Skripsi, Keseharian, Tutorial, IT, Programming, Data Mining, Bisnis, SEO dan lain nya`,
+        title: "Daftar Artikel",
+        description: `Artikel di ${process.env.NEXT_PUBLIC_BASE_NAME} berisi banyak hal, mulai dari Daftar Pustaka Skripsi, Keseharian, Tutorial, IT, Programming, Data Mining, Bisnis, SEO dan lain nya. Bingung cari Dapus? Yo di sini aja`,
         images: '/baseImg.jpg',
-        locale: 'en_US',
+        locale: 'id_ID',
         type: 'article',
-        siteName: `Daftar Artikel | ${process.env.NEXT_PUBLIC_BASE_NAME}`
+        authors: "Syihabudin Tsani",
+        publishedTime: new Date().toLocaleDateString()
     },
     alternates: {canonical: '/artikel'},
     robots: {index: true, follow: true},
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
 export default function Artikel(){
     return(
         <> 
-        <div className={style['list-artikel-wrap']}>
+        <article className={style['list-artikel-wrap']}>
             <div className={style['list-artikel-body']}>
                 <h1 style={{textAlign: 'center', margin: '50px auto'}}>Daftar Artikel</h1>
                 <section title="Daftar Artikel">
@@ -34,7 +35,7 @@ export default function Artikel(){
             <div className={style["short-tools"]}>
                 <ShortTools/>
             </div>
-        </div>
+        </article>
         </>
     )
 }

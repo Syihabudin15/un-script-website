@@ -29,19 +29,19 @@ export default function FormContact(){
                 <section title="Sosial Media" className={style['sosmed-wrap']}>
                     <div className={style['sosmed-item']}>
                         <IconFont type="icon-whatsapp"/>
-                        <span><Link href={'https://wa.me/+62881022157439'}>0881022157439</Link></span>
+                        <span><Link href={'https://wa.me/+62881022157439'} title={`WhatsApp ${process.env.NEXT_PUBLIC_BASE_NAME}`} target="_blank">0881022157439</Link></span>
                     </div>
                     <div className={style['sosmed-item']}>
                         <IconFont type="icon-instagram1"/>
-                        <span><Link href={'https://wa.me/+62881022157439'}>@unscript_official</Link></span>
+                        <span><Link href={'https://wa.me/+62881022157439'} target="_blank" title={`Instagram ${process.env.NEXT_PUBLIC_BASE_NAME}`}>@unscript_official</Link></span>
                     </div>
                     <div className={style['sosmed-item']}>
                         <IconFont type="icon-facebook"/>
-                        <span><Link href={'https://wa.me/+62881022157439'}>Unscript Official</Link></span>
+                        <span><Link href={'https://wa.me/+62881022157439'} target="_blank" title={`Facebook ${process.env.NEXT_PUBLIC_BASE_NAME}`}>Unscript Official</Link></span>
                     </div>
                     <div className={style['sosmed-item']}>
                         <IconFont type="icon-Gmail"/>
-                        <span><Link href={'https://wa.me/+62881022157439'}>unscript@gmail.com</Link></span>
+                        <span><Link href={'https://wa.me/+62881022157439'} target="_blank" title={`Email ${process.env.NEXT_PUBLIC_BASE_NAME}`}>unscript@gmail.com</Link></span>
                     </div>
                 </section>
                 <section title="Lokasi Perusahaan" className={style["company-loc"]}>

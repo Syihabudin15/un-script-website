@@ -3,6 +3,7 @@ import Image from "next/image";
 import style from "../../../src/app/(Guest)/artikel/Artikel.module.css";
 import { Avatar, Divider, Tag } from "antd";
 import { EyeOutlined, ArrowRightOutlined } from "@ant-design/icons";
+import Link from "next/link";
 
 type Article = {
     title: string
@@ -13,11 +14,11 @@ export default function BodyArticle({article}:{article: Article}){
     return(
         <article title={article.title}>
             <div className={style["navigate"]}>
-                <div>Artikel</div>
+                <div><Link href={'/artikel'} target="_blank" title="Artikel">Artikel</Link></div>
                 <div><ArrowRightOutlined style={{fontSize: 12, color: 'blue'}}/></div>
-                <div>Programming</div>
+                <div><Link href={`/artikel/kategori/programming`} target="_blank" title="Kategori programming">Programming</Link></div>
                 <div><ArrowRightOutlined style={{fontSize: 12, color: 'blue'}}/></div>
-                <div>Pengertian System Development Lifecycle</div>
+                <div><Link href={`/artikel/params`} target="_blank" title="Artikel Programming">Pengertian System Development Lifecycle</Link></div>
             </div>
             <div className={style['art-base-img']}>
                 <Image src={'/baseImg.jpg'} alt="Artikel Image" fill/>

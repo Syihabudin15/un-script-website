@@ -1,7 +1,6 @@
 import type { Metadata, ResolvingMetadata } from 'next'
-import { Comments, ShortTools } from '../../../../../components/Guest/Artikel'
+import { Comments, ShortTools, CardParams, BodyArticle } from '../../../../../components/Guest/Artikel'
 import style from "../Artikel.module.css";
-import { CardParams, BodyArticle } from '../../../../../components/Guest/Artikel';
 
 export async function generateMetadata(
         { params }: {params: {slug: string}},
@@ -12,8 +11,17 @@ export async function generateMetadata(
         description: "Artikel with params",
         openGraph: {
             url: `/artikel/${params.slug}`,
-            title: params.slug
+            description: '',
+            images: '/baseImg.jpg',
+            locale: 'id_ID',
+            title: params.slug,
+            type: 'article',
+            publishedTime: new Date().toLocaleDateString(),
+            authors: "Syihabudin Tsani"
         },
+        alternates: {canonical: `/artikel/${params.slug}`},
+        robots: {index: true, follow: true},
+        keywords: ''
     }
 }
 

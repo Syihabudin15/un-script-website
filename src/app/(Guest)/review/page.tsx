@@ -1,10 +1,10 @@
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-    title: `Reviews | ${process.env.NEXT_PUBLIC_BASE_NAME}`,
+    title: `Reviews`,
     description: "Reviews Un Script untuk pembuatan Skripsi, Tesis, Aplikasi dan Undangan",
     openGraph: {
-        title: `Reviews | ${process.env.NEXT_PUBLIC_BASE_NAME}`,
+        title: `Reviews`,
         description: "Reviews Un Script untuk pembuatan Skripsi, Tesis, Aplikasi dan Undangan",
         url: '/review'
     }

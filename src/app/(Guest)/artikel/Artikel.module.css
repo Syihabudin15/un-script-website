@@ -65,6 +65,9 @@
 }
 .short-divider{
     padding: 5px;
+    line-height: 1.5;
+    padding-left: 20px;
+    box-sizing: border-box;
 }
 .short-divider a{
     display: block;
@@ -137,6 +140,7 @@
 }
 .card-params-title{
     font-weight: bold;
+    font-size: 1em;
 }
 .card-params-date{
     font-size: .8em;
@@ -188,6 +192,9 @@
     }
     .title-art{
         font-size: 1.4em;
+    }
+    .add-hide{
+        display: none;
     }
 }
 

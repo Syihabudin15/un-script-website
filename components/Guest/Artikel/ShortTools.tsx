@@ -12,28 +12,34 @@ export default function ShortTools(){
         <section title="Short Tools" className={style['short']}>
             <section title="Cari Artikel">
                 <Input.Search placeholder="Cari Artikel" onChange={(e) => setSearch(e.target.value)} />
-                <div className={style["hidden-search"]} style={{display: !search ? "none" : ""}}>
+                <article className={style["hidden-search"]} style={{display: !search ? "none" : ""}}>
+                    <article>
+                        <p><Link href={'/'} title={`Lorem Ipsum`} target="_blank">Lorem, ipsum.</Link></p>
+                    </article>
                     <Link href={'/'}>Lorem, ipsum.</Link>
                     <Link href={'/'}>Lorem, ipsum.</Link>
-                    <Link href={'/'}>Lorem, ipsum.</Link>
-                </div>
+                </article>
             </section>
             <Divider style={{fontSize: 12, margin: '50px 0 10px 0'}} orientation="left">Trending Kategori</Divider>
             <section title="Relevan kategori" className={style['short-divider']}>
-                <Link href={'/'}>Programming</Link>
+                <article>
+                    <p><Link href={'/'} title={`Kategori Programming`} target="_blank">Programming</Link></p>
+                </article>
                 <Link href={'/'}>Programming</Link>
                 <Link href={'/'}>Programming</Link>
                 <p className={style['more']}>
-                    <Link href={'/'}>..more</Link>
+                    <Link href={'/'} target="_blank">..more</Link>
                 </p>
             </section>
             <Divider style={{fontSize: 12, margin: '20px 0 10px 0'}} orientation="left">Banyak Dicari</Divider>
             <section title="Banyak dicari" className={style['short-divider']}>
-                <Link href={'/'}>Programming</Link>
+                <article>
+                    <p><Link href={'/'} title={`Artikel Programming`} target="_blank">Programming</Link></p>
+                </article>
                 <Link href={'/'}>Programming</Link>
                 <Link href={'/'}>Programming</Link>
                 <p className={style['more']}>
-                    <Link href={'/'}>..more</Link>
+                    <Link href={'/'} target="_blank">..more</Link>
                 </p>
             </section>
             <Divider />
@@ -42,12 +48,24 @@ export default function ShortTools(){
             </section>
             <Divider style={{fontSize: 12, margin: '20px 0 10px 0'}} orientation="left">Layanan Un Script</Divider>
             <section title="Banyak dicari" className={style['short-divider']}>
-                <Link href={'/'}>Programming</Link>
-                <Link href={'/'}>Programming</Link>
-                <Link href={'/'}>Programming</Link>
-                <p className={style['more']}>
-                    <Link href={'/'}>..more</Link>
-                </p>
+                <article>
+                    <p><Link href={'/ta'} title="Pembuatan Skripsi" target="_blank">Pembuatan Skrpisi</Link></p>
+                </article>
+                <article>
+                    <p><Link href={'/ta'} title="Pembuatan Tesis" target="_blank">Pembuatan Tesis</Link></p>
+                </article>
+                <article>
+                    <p><Link href={'/ta'} title="Pembuatan Tugas Sekolah" target="_blank">Pembuatan Tugas Sekolah</Link></p>
+                </article>
+                <article>
+                    <p><Link href={'/apps'} title="Pembuatan Website" target="_blank">Pembuatan Website</Link></p>
+                </article>
+                <article>
+                    <p><Link href={'/apps'} title="Pembuatan Aplikasi Mobile" target="_blank">Pembuatan Aplikasi Mobile</Link></p>
+                </article>
+                <article>
+                    <p><Link href={'/undangan'} title="Pembuatan Undangan Digital" target="_blank">Pembuatan Undangan Digital</Link></p>
+                </article>
             </section>
         </section>
     )
