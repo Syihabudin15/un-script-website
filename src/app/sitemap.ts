@@ -1,45 +1,52 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap():MetadataRoute.Sitemap{
+    const prcs = process.env.NEXT_PUBLIC_BASE_URL;
     return[
         {
-            url: "/",
+            url: `${prcs}`,
             lastModified: new Date().toLocaleDateString(),
             priority: 1,
             changeFrequency: 'monthly'
         },
         {
-            url: "/artikel",
+            url: `${prcs}/artikel`,
             lastModified: new Date().toLocaleDateString(),
             priority: 1,
             changeFrequency: 'weekly'
         },
         {
-            url: "/artikel/kategori",
+            url: `${prcs}/artikel/kategori`,
             lastModified: new Date().toLocaleDateString(),
             priority: 1,
             changeFrequency: 'weekly'
         },
         {
-            url: "/bantuan",
+            url: `${prcs}/bantuan`,
             lastModified: new Date().toLocaleDateString(),
             priority: 0.5,
             changeFrequency: 'monthly'
         },
         {
-            url: "/review",
+            url: `${prcs}/review`,
             lastModified: new Date().toLocaleDateString(),
             priority: 1,
             changeFrequency: 'weekly'
         },
         {
-            url: "/ta",
+            url: `${prcs}/apps`,
+            lastModified: new Date().toLocaleDateString(),
+            priority: 1,
+            changeFrequency: 'weekly'
+        },
+        {
+            url: `${prcs}/ta`,
             lastModified: new Date().toLocaleDateString(),
             priority: 0.5,
             changeFrequency: 'monthly'
         },
         {
-            url: "/undangan",
+            url: `${prcs}/undangan`,
             lastModified: new Date().toLocaleDateString(),
             priority: 1,
             changeFrequency: 'weekly'
