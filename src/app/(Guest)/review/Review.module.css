@@ -1,0 +1,45 @@
+.review-wrap{
+    padding: 50px 20px;
+}
+.review-wrap h2{
+    font-style: italic;
+    font-size: 1.2em;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.ulasan-client{
+    display: flex;
+    align-items: 10px;
+    gap: 10px;
+}
+.ulasan-client h3{
+    font-size: .9em;
+}
+.ulasan-client span{
+    font-weight: bold;
+}
+.univ{
+    font-size: .8em;
+    opacity: .7;
+    font-style: italic;
+}
+.list-review{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+
+/* Mobile */
+@media only screen and (max-width: 800px){}
+
+
+/* Windows */
+@media only screen and (min-width: 800px){
+    .ulsan-item{
+        width: 300px;
+    }
+}

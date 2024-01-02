@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     },
     alternates: {canonical: '/artikel'},
     robots: {index: true, follow: true},
-    keywords: "daftar pustaka, artikel untuk skripsi, daftar pustaka 2024, coding, programming, data mining, belajar data mining, belajar coding dari dasar, belajar SEO pemula, belajar programming, uns, unscript, un script, un-script, belajar ai, artificial inteligent, membuat blog, blog"
+    keywords: "daftar pustaka, artikel untuk skripsi, daftar pustaka 2024, coding, programming, data mining, belajar data mining, belajar coding dari dasar, belajar SEO pemula, belajar programming, belajar ai, artificial inteligent, membuat blog, blog"
 }
 
 export default function Artikel(){

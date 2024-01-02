@@ -1,4 +1,5 @@
 import { Metadata } from "next"
+import { CardCategories } from "../../../../../components/Guest/Artikel/Kategori"
 
 export const metadata: Metadata = {
     title: "Kategori",
@@ -13,7 +14,12 @@ export const metadata: Metadata = {
 export default function Kategori(){
     return(
         <>
-            <h1>Kategori Page</h1>
+            <section style={{padding: '50px 10px'}}>
+                <h1 style={{textAlign: 'center'}}>Daftar Kategori</h1>
+                <div>
+                    <CardCategories />
+                </div>
+            </section>
         </>
     )
 }
