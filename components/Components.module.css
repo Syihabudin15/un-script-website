@@ -1,0 +1,10 @@
+.adds-wrap{
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #001529, #003d72);
+    margin: 10px auto;
+    border-radius: 5px;
+}

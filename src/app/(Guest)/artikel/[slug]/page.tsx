@@ -1,4 +1,7 @@
 import type { Metadata, ResolvingMetadata } from 'next'
+import { Comments, ShortTools } from '../../../../../components/Guest/Artikel'
+import style from "../Artikel.module.css";
+import { CardParams, BodyArticle } from '../../../../../components/Guest/Artikel';
 
 export async function generateMetadata(
         { params }: {params: {slug: string}},
@@ -14,10 +17,25 @@ export async function generateMetadata(
     }
 }
 
+type Article = {
+    title: string
+}
 export default function ArtikelWithParams({params}: {params: {slug: string}}){
+    const article: Article = {
+        title: "Pengertian SDLC"
+    }
     return(
         <>
-            <h1>Artikel With Params {params.slug}</h1>
+        <section title={`${params.slug}`} className={style['list-artikel-wrap']} id={style["article"]}>
+            <div className={style['list-artikel-body']}>
+                <BodyArticle article={article} />
+            </div>
+            <div className={style["short-tools"]}>
+                <ShortTools />
+            </div>
+        </section>
+        <CardParams/>
+        <Comments/>
         </>
     )
 }

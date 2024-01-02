@@ -1,4 +1,3 @@
-"use client"
 import { Button, Carousel } from "antd";
 import style from "../../../src/app/(Guest)/Home.module.css";
 

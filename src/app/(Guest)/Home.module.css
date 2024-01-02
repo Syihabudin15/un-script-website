@@ -188,12 +188,14 @@
 .sosmed-wrap{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
     gap: 20px;
     font-style: italic;
 }
 .sosmed-item{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 .company-loc{
@@ -212,7 +214,7 @@
 }
 
 
-
+/* Mobile Style */
 @media only screen and (max-width: 800px){
     .product-slider-wrap{
         width: 90vw;
@@ -261,10 +263,17 @@
         width: 50px;
         font-size: 50px;
     }
+    .sosmed-wrap{
+        width: 90vw;
+    }
 }
 
+/* Windows Style */
 @media only screen and (min-width: 800px){
     .form{
+        width: 35vw;
+    }
+    .sosmed-wrap{
         width: 35vw;
     }
     .icon-why-us{
