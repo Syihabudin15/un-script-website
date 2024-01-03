@@ -2,6 +2,7 @@ import { Divider } from "antd"
 import { Metadata } from "next"
 import style from "./Review.module.css";
 import { Aplikasi, TugasAkhir, Undangan } from "../../../../components/Guest/Review";
+import LiveChat from "../../../../components/LivieChat";
 
 export const metadata: Metadata = {
     title: `Reviews`,
@@ -37,6 +38,7 @@ export default function Review(){
                     <Undangan/>
                 </section>
             </section>
+            <LiveChat/>
         </>
     )
 }

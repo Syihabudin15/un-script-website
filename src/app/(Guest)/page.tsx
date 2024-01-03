@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { AboutUs, FormContact, ListSoftwares, ProductPrice, ProductSlider, WhyUsDiagram, WorkRoadmap } from "../../../components/Guest/Homepage"
 import style from "./Home.module.css";
 import { Divider } from "antd";
+import LiveChat from "../../../components/LivieChat";
 
 export default function HomePage(){
     useEffect(() => {
@@ -54,6 +55,7 @@ export default function HomePage(){
         <div className={style["section"]}>
             <FormContact/>
         </div>
+        <LiveChat/>
         </>
     )
 }

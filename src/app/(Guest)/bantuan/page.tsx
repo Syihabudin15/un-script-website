@@ -1,4 +1,5 @@
 import { Metadata } from "next"
+import LiveChat from "../../../../components/LivieChat"
 
 export const metadata: Metadata = {
     title: `Bantuan`,
@@ -14,6 +15,7 @@ export default function Bantuan(){
     return(
         <>
             <h1>Bantuan Page</h1>
+            <LiveChat/>
         </>
     )
 }

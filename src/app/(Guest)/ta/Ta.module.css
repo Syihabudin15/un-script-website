@@ -1,0 +1,59 @@
+.top-wrap{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    font-size: 1.5em;
+    padding: 30px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right, #001529, #003d72);
+    color: white;
+}
+.top-brand-text{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.top-brand-text p{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.text-solution{
+    font-weight: bold;
+    position: relative;
+}
+.hiasan{
+    display: flex;
+    opacity: .5;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px;
+}
+.hiasan1{
+    width: 20px;
+    height: 20px;
+    border: 2px solid yellow;
+    border-radius: 50%;
+}
+/* Mobile */
+@media only screen and (max-width: 800px){
+    .top-wrap{
+        height: 80vh;
+    }
+    .top-brand-text{
+        padding: 10px;
+        border-bottom: 2px solid blue;
+    }
+}
+
+/* Window */
+@media only screen and (min-width: 800px){
+    .top-wrap{
+        height: 60vh;
+    }
+    .soltext{
+        width: 50vw;
+    }
+}

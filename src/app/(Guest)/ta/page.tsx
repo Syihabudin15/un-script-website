@@ -1,4 +1,6 @@
 import { Metadata } from "next"
+import LiveChat from "../../../../components/LivieChat"
+import { Top } from "../../../../components/Guest/TugasAkhir"
 
 export const metadata: Metadata = {
     title: `Tugas Akhir`,
@@ -13,7 +15,10 @@ export const metadata: Metadata = {
 export default function Ta(){
     return(
         <>
-            <h1>Tugas Akhir Page</h1>
+            <section title="Tugas Akhir">
+                <Top />
+            </section>
+            <LiveChat/>
         </>
     )
 }

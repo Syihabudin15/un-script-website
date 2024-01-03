@@ -1,5 +1,5 @@
 'use client'
-import { Button, Drawer, Menu } from 'antd';
+import { Button, Divider, Drawer, Menu } from 'antd';
 import { QuestionCircleOutlined, HomeOutlined, CopyrightCircleOutlined, MenuOutlined } from "@ant-design/icons";
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
@@ -8,6 +8,7 @@ import '../globals.css';
 import { useRouter } from 'next/navigation';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import LiveChat from '../../../components/LivieChat';
 
 export default function RootLayout({
     children,
@@ -74,9 +75,52 @@ export default function RootLayout({
     </div>
 
     {/* Footer */}
-    <footer className='footer'>
-        <p>Copyright <CopyrightCircleOutlined/> 2022 {process.env.NEXT_PUBLIC_BASE_NAME}.</p>
-        <p>All Right Reserved</p>
+    <footer className='footer-wrapper'>
+        <div className='foot-head'>
+            <div className='foot-left'>
+            <div className='foot-right-item'>
+                <p>Alamat Perusahaan</p>
+                    <div style={{lineHeight: 1.5}}>
+                        Kp. Karapiak jalan raya Bandung Garut, Desa Nanjung Mekar, Kecamatan Rancaekek, Kabupaten Bandung, Provinsi Jawabarat, Negara Indonesia
+                    </div>
+                </div>
+            </div>
+            <div className='foot-right'>
+                <div className='foot-right-item'>
+                    <p>Layanan</p>
+                    <div>
+                        <Link href={'/ta'} title='Pembuatan Skripsi'>Pembuatan Skripsi</Link>
+                        <Link href={'/ta'} title='Pembuatan Tesis'>Pembuatan Tesis</Link>
+                        <Link href={'/apps'} title='Pembuatan Website'>Pembuatan Website</Link>
+                        <Link href={'/apps'} title='Pembuatan Aplikasi Mobile'>Pembuatan Aplikasi Mobile</Link>
+                        <Link href={'/undangan'} title='Pembuatan Undangan Digital'>Pembuatan Undangan Digital</Link>
+                    </div>
+                </div>
+                <div className='foot-right-item'>
+                    <p>Fitur</p>
+                    <div>
+                        <Link href={'/artikel'}>Artikel</Link>
+                        <Link href={'/review'}>Ulasan</Link>
+                        <Link href={'/Bantuan'}>Bantuan</Link>
+                        <Link href={'/artikel/dapus'}>Daftar Pustaka</Link>
+                    </div>
+                </div>
+                <div className='foot-right-item'>
+                    <p>Kontak</p>
+                    <div>
+                        <Link href={'/'}>Email</Link>
+                        <Link href={'/'}>Facebook</Link>
+                        <Link href={'/'}>Whataspp</Link>
+                        <Link href={'/'}>Instagram</Link>
+                        <Link href={'/'}>No Telepon</Link>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer className='footer'>
+            <p>Copyright <CopyrightCircleOutlined/> 2022 {process.env.NEXT_PUBLIC_BASE_NAME}.</p>
+            <p>All Right Reserved</p>
+        </footer>
     </footer>
     {/* End Footer */}
     </>

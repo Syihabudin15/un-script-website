@@ -1,4 +1,5 @@
 import { Metadata } from "next"
+import LiveChat from "../../../../components/LivieChat"
 
 export const metadata: Metadata = {
     title: `Aplikasi`,
@@ -14,6 +15,7 @@ export default function Apps(){
     return(
         <>
             <h1 >Apps Page</h1>
+            <LiveChat/>
         </>
     )
 }
