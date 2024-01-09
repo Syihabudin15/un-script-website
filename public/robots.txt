@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /api
 Disallow: /usr
 
 Sitemap: https://un-script.vercel.app/sitemap.xml

@@ -11,6 +11,7 @@ export default function Top(){
                 <Carousel  autoplay autoplaySpeed={3000} dots={false} style={{width: 120, fontFamily: 'Times New Roman', color: 'blue'}} waitForAnimate>
                     <p>SKRIPSI ?</p>
                     <p>TESIS ?</p>
+                    <p>JURNAL ?</p>
                 </Carousel>
             </div>
             <div className={style['text-solution']}>
@@ -25,7 +26,7 @@ export default function Top(){
                     <p>Kami memiliki layanan untuk memecahkan masalah yang sedang anda hadapi</p>
                 </div>
                 <div className={style["hiasan"]}>
-                    <RadarChartOutlined style={{color: 'blue', fontSize: 50}} />
+                    <RadarChartOutlined id="rotate-deg" style={{color: 'blue', fontSize: 50}} />
                     <DropboxOutlined />
                 </div>
                 <div className={style["hiasan"]}>

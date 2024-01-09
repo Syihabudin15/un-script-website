@@ -7,7 +7,7 @@ import LiveChat from "../../../components/LivieChat";
 
 export default function HomePage(){
     useEffect(() => {
-        const text = ["U", "N", " ", "S", "C", "R", "I", "P", "T"];
+        const text = ["U", "N", " ", "S", "C", "R", "I", "P", "T", " ", "T", "E", "C", "H", "N", "O", "L", "O", "G", "Y"];
         let i = 0;
         const inter = setInterval(() => {
             document.getElementById('text-brand')?.append(text[i]);
@@ -16,6 +16,7 @@ export default function HomePage(){
                 clearInterval(inter);
             }
         }, 300);
+        // console.log(new Date().toLocaleDateString("id-ID", {year: "numeric", month: "long", day: "2-digit", weekday: 'long'})) // Is date ID format
     }, []);
     return(
         <>

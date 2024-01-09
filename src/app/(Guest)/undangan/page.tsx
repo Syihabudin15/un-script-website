@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function Undangan(){
     return(
         <>
-            <h1>Undangan Digital Page</h1>
+            <h1 style={{textAlign: "center", lineHeight: 10, opacity: .7}}>Sorry this page is under development</h1>
             <LiveChat/>
         </>
     )

@@ -1,8 +1,6 @@
-import { Divider } from "antd"
 import { Metadata } from "next"
-import style from "./Review.module.css";
-import { Aplikasi, TugasAkhir, Undangan } from "../../../../components/Guest/Review";
 import LiveChat from "../../../../components/LivieChat";
+import Root from "./root";
 
 export const metadata: Metadata = {
     title: `Reviews`,
@@ -22,22 +20,7 @@ export default function Review(){
     return(
         <>
             <h1 style={{display: 'none'}}>Reviews Page</h1>
-            <section title="Review Kami" className={style['review-wrap']}>
-                <section title="Review Tugas Akhir">
-                    <h2>Ulasan Tugas Akhir</h2>
-                    <TugasAkhir/>
-                </section>
-                <Divider/>
-                <section title="Review Aplikasi">
-                    <h2>Ulasan Web App & Mobile App</h2>
-                    <Aplikasi/>
-                </section>
-                <Divider/>
-                <section title="Review Tugas Akhir">
-                    <h2>Ulasan Undangan Digital</h2>
-                    <Undangan/>
-                </section>
-            </section>
+            <Root />
             <LiveChat/>
         </>
     )

@@ -84,6 +84,13 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   background-color: #7c7c7c10;
+  color: rgb(73, 73, 73);
+}
+#map { 
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  z-index: 100;
 }
 .menu-wrapper-guest{
   display: flex;
@@ -182,6 +189,7 @@ body {
   box-sizing: border-box;
   width: 30vw;
   transition: 300ms;
+  opacity: .9;
 }
 .header-modal{
   display: flex;
@@ -200,6 +208,7 @@ body {
   height: 200px;
   overflow-y: auto;
   transition: 300ms;
+  border: 2px solid #eee;
 }
 .system-wrap{
   width: 100%;
@@ -228,7 +237,22 @@ body {
   border-radius: 15px;
 }
 
-
+/* Animation */
+#text-brand:hover{
+  transform: scale(-1);
+  transition: 1s;
+}
+#flip:hover{
+  transform: scaleX(-1);
+}
+#scale-out:hover{
+  transform: scale(.97);
+  transition: 300ms;
+}
+#rotate-deg:hover{
+  transform: rotate(90deg);
+  transition: 500ms;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -260,6 +284,7 @@ a {
   .foot-left {
     text-align: center;
     margin-bottom: 10px;
+    display: none;
   }
   .livechat{
     width: 50px;

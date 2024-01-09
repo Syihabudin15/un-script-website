@@ -24,6 +24,11 @@
     bottom: 50px;
     background-color: white;
     opacity: .7;
+    transition: 500ms;
+}
+.text-wrapper:hover{
+    opacity: 1;
+    transform: rotate(-20deg);
 }
 .card-item h2{
     font-size: 1em;

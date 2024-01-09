@@ -6,7 +6,7 @@ import style from "../../../src/app/(Guest)/Home.module.css";
 export default function ListSoftwares(){
     return(
         <section title="Daftar Software yang kami gunakan" className={style["software-wrap"]}>
-            <Carousel autoplay dots={false} className={style["software-item"]}>
+            <Carousel autoplay dots={false} className={style["software-item"]} >
                 <div><IconFont type="icon-javascript" /></div>
                 <div><IconFont type="icon-react" /></div>
                 <div><IconFont type="icon-vue" /></div>

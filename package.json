@@ -10,21 +10,29 @@
   },
   "dependencies": {
     "@ant-design/nextjs-registry": "^1.0.0",
+    "@maptiler/leaflet-maptilersdk": "^2.0.0",
+    "@maptiler/sdk": "^1.2.1",
     "@vercel/analytics": "^1.1.1",
     "@vercel/speed-insights": "^1.0.2",
     "antd": "^5.12.5",
     "aos": "^3.0.0-beta.6",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "leaflet": "^1.9.4",
+    "mongoose": "^8.0.3",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
     "@types/aos": "^3.0.7",
+    "@types/leaflet": "^1.9.8",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
+    "prisma": "^5.7.1",
     "typescript": "^5"
   }
 }

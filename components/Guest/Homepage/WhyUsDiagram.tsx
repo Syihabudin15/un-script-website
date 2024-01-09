@@ -9,7 +9,7 @@ export default function WhyUsDiagram(){
                     <div className={style["why-us-item-img"]}><IconFont type="icon-professional-fill" className={style['icon-why-us']}/></div>
                     <span>Professional</span>
                 </div>
-                <div className={style["why-us-item"]} data-aos="zoom-in-up">
+                <div className={style["why-us-item"]} data-aos="zoom-in-up" >
                     <div className={style["why-us-item-img"]}><IconFont type="icon-jiaoseguanli" className={style['icon-why-us']}/></div>
                     <span>Great Team</span>
                 </div>
@@ -23,7 +23,7 @@ export default function WhyUsDiagram(){
                 </div>
             </div>
             <div className={style['jaminan-lulus']} data-aos="zoom-in-up">
-                <div className={style['jaminan-lulus-img']}><IconFont type="icon-student" className={style['jaminan-lulus-icon']}/></div>
+                <div className={style['jaminan-lulus-img']} ><IconFont type="icon-student" className={style['jaminan-lulus-icon']}/></div>
                 <span>JAMINAN LULUS</span>
             </div>
         </section>

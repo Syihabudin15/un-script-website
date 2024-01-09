@@ -37,6 +37,73 @@
     border: 2px solid yellow;
     border-radius: 50%;
 }
+.list-layanan{
+    padding: 20px 40px;
+    text-align: justify;
+    line-height: 2;
+    margin: 50px auto;
+    box-sizing: border-box;
+}
+.pengantar p{
+    margin-top: 10px;
+}
+.list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.list-item{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px rgb(153, 153, 153);
+    min-width: 270px;
+    cursor: pointer;
+}
+.list-item h2{
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0 0 20px 0;
+}
+.list-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-style: italic;
+    color: green;
+    line-height: 1.5;
+}
+.benefits{
+    font-style: italic;
+    line-height: 1.2;
+    font-size: 13px;
+}
+.text-muted{
+    opacity: .7;
+    font-size: 12px;
+}
+
+/* Form */
+.form-wrap{
+    width: 50vw;
+    margin: 100px auto;
+    background-color: white;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(179, 179, 179);
+}
+.div-btn{
+    width: 80%;
+    margin: 20px auto;
+}
+
+
+
+
 /* Mobile */
 @media only screen and (max-width: 800px){
     .top-wrap{
@@ -45,6 +112,15 @@
     .top-brand-text{
         padding: 10px;
         border-bottom: 2px solid blue;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .form-wrap{
+        width: 80vw;
+        padding: 20px;
+    }
+    .div-btn{
+        width: 100%;
     }
 }
 

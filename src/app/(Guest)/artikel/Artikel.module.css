@@ -98,8 +98,8 @@
 }
 .art-base-img{
     width: 50vw;
-    height: 200px;
     position: relative;
+    min-height: 200px;
     margin: 20px auto;
 }
 .author-view{
@@ -188,7 +188,6 @@
     }
     .art-base-img{
         width: 90vw;
-        height: 200px;
     }
     .title-art{
         font-size: 1.4em;

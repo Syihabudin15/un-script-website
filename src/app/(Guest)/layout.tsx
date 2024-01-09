@@ -1,5 +1,5 @@
 'use client'
-import { Button, Divider, Drawer, Menu } from 'antd';
+import { Button, Drawer, Menu } from 'antd';
 import { QuestionCircleOutlined, HomeOutlined, CopyrightCircleOutlined, MenuOutlined } from "@ant-design/icons";
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
@@ -8,7 +8,6 @@ import '../globals.css';
 import { useRouter } from 'next/navigation';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import LiveChat from '../../../components/LivieChat';
 
 export default function RootLayout({
     children,
@@ -19,18 +18,18 @@ export default function RootLayout({
     const [scrolling, setScrolling] = useState(false);
     const nav = useRouter();
     const items = [
-        {label: "Home", key: '/', icon: <HomeOutlined/>},
-        {label: "Artikel", key: '#artikel', icon: <IconFont type="icon-wenzhang" />,
+        {label: "Home", key: '/', title: "Home", icon: <HomeOutlined/>},
+        {label: "Artikel", key: '#artikel', title: "Artikel", icon: <IconFont type="icon-wenzhang" />,
             children: [
-                {label: "List Artikel", key: '/artikel', icon: <IconFont type="icon-articles1" />},
-                {label: "Kategori", key: '/artikel/kategori', icon: <IconFont type="icon-bxs-category-alt"/>}
+                {label: "List Artikel", key: '/artikel', title: "Daftar Artikel", icon: <IconFont type="icon-articles1" />},
+                {label: "Kategori", key: '/artikel/kategori', title: "Daftar Kategori", icon: <IconFont type="icon-bxs-category-alt"/>}
             ]
         },
-        {label: "Tugas Akhir", key: '/ta', icon: <IconFont type='icon-student' style={{opacity: .7}}/>},
-        {label: "Apps", key: '/apps', icon: <IconFont type="icon-coding"/>},
-        {label: "Undangan", key: '/undangan', icon: <IconFont type="icon-wedding-rings" />},
-        {label: "Review", key: '/review', icon: <IconFont type="icon-rate-review"/>},
-        {label: "Bantuan", key: '/bantuan', icon: <QuestionCircleOutlined/>}
+        {label: "Tugas Akhir", key: '/ta', icon: <IconFont type='icon-student' style={{opacity: .7}}/>, title: "Pembuatan Tugas Akhir"},
+        {label: "Apps", key: '/apps', icon: <IconFont type="icon-coding"/>, title: "Pembuatan Web dan Aplikasi"},
+        {label: "Undangan", key: '/undangan', icon: <IconFont type="icon-wedding-rings" />, title: "Pembuatan Undangan Digital"},
+        {label: "Review", key: '/review', icon: <IconFont type="icon-rate-review"/>, title: "Ulasan Kami"},
+        {label: "Bantuan", key: '/bantuan', icon: <QuestionCircleOutlined/>, title: "Bantuan"}
     ]
     useEffect(() => {
         window.addEventListener('scroll', () => {
@@ -52,7 +51,7 @@ export default function RootLayout({
     {/* Menu */}
     <nav className='menu-wrapper-guest' style={{opacity: scrolling? .7 : 1}} title='Menu Navigation Un Script'>
         <div>
-            <Link href={'/'}>UNS</Link>
+            <Link title='Home' href={'/'}>UNS</Link>
         </div>
         <div className='menu-windows'>
             <Menu items={items} theme='dark' mode='horizontal' style={{width: 750}} onClick={(e) => nav.push(e.key)} />
@@ -78,10 +77,10 @@ export default function RootLayout({
     <footer className='footer-wrapper'>
         <div className='foot-head'>
             <div className='foot-left'>
-            <div className='foot-right-item'>
-                <p>Alamat Perusahaan</p>
-                    <div style={{lineHeight: 1.5}}>
-                        Kp. Karapiak jalan raya Bandung Garut, Desa Nanjung Mekar, Kecamatan Rancaekek, Kabupaten Bandung, Provinsi Jawabarat, Negara Indonesia
+                <div className='foot-right-item'>
+                    <p>Alamat Perusahaan</p>
+                    <div style={{lineHeight: 1.5, fontStyle: 'italic'}}>
+                        Kp. Karapiak RT 04 / RW 05, Jalan Raya Bandung Garut, <br/>Desa Nanjung Mekar, Kecamatan Rancaekek, <br/>Kabupaten Bandung, Provinsi Jawabarat, Negara Indonesia
                     </div>
                 </div>
             </div>
@@ -99,20 +98,20 @@ export default function RootLayout({
                 <div className='foot-right-item'>
                     <p>Fitur</p>
                     <div>
-                        <Link href={'/artikel'}>Artikel</Link>
-                        <Link href={'/review'}>Ulasan</Link>
-                        <Link href={'/Bantuan'}>Bantuan</Link>
-                        <Link href={'/artikel/dapus'}>Daftar Pustaka</Link>
+                        <Link href={'/artikel'} title='Artikel'>Artikel</Link>
+                        <Link href={'/review'} title='Ulasan'>Ulasan</Link>
+                        <Link href={'/bantuan'} title='Bantuan'>Bantuan</Link>
+                        <Link href={'/artikel/kategori/dapus'} title='Kategori Dapus'>Daftar Pustaka</Link>
                     </div>
                 </div>
                 <div className='foot-right-item'>
                     <p>Kontak</p>
                     <div>
-                        <Link href={'/'}>Email</Link>
-                        <Link href={'/'}>Facebook</Link>
-                        <Link href={'/'}>Whataspp</Link>
-                        <Link href={'/'}>Instagram</Link>
-                        <Link href={'/'}>No Telepon</Link>
+                        <Link href={'/'} title='Email'>Email</Link>
+                        <Link href={'/'} title='Facebook'>Facebook</Link>
+                        <Link href={'/'} title='WhatApps'>Whataspp</Link>
+                        <Link href={'/'} title='Instaggram'>Instagram</Link>
+                        <Link href={'/'} title='Nomor Telepon'>No Telepon</Link>
                     </div>
                 </div>
             </div>

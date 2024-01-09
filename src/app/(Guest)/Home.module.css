@@ -1,3 +1,4 @@
+
 .header-home{
     background-image: url('/baseImg.jpg');
     background-repeat: repeat-x;
@@ -13,6 +14,7 @@
 }
 .product-slider-wrap{
     width: 500px;
+    transition: 500ms;
 }
 .product-slider{
     width: 100%;
@@ -37,6 +39,10 @@
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 30px;
+    animation: shine 3s infinite linear;
+    background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .short-desc{
     text-align: center;
@@ -201,8 +207,10 @@
 .company-loc{
     width: 100%;
     border: 1px solid black;
-    min-height: 200px;
+    height: 200px;
     margin-top: 30px;
+    position: relative;
+    /* overflow: hidden; */
 }
 .software-wrap{
     display: flex;
@@ -211,6 +219,19 @@
 .software-item{
     width: 100px;
     font-size: 100px;
+}
+
+/* Animate */
+@keyframes shine {
+    0% {
+        background-position: 0;
+    }
+    60% {
+        background-position: 600px;
+    }
+    100% {
+        background-position: 600px;
+    }
 }
 
 

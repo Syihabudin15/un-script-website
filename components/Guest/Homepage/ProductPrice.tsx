@@ -7,7 +7,7 @@ export default function ProductPrice(){
     return(
         <section title={`Daftar Produk ${process.env.NEXT_PUBLIC_BASE_NAME}`} className={style['card-product']}>
             {items.map((e,i) => (
-                <section title={`Pembuatan ${e.name}`} key={i} className={style['product-item']} data-aos="fade-up" data-aos-duration="1000">
+                <section title={`Pembuatan ${e.name}`} key={i} className={style['product-item']} id="scale-out" data-aos="fade-up" data-aos-duration="1000">
                     <div className={style['product-title']}>
                         <h3>{e.name.toUpperCase()}</h3>
                     </div>
@@ -42,9 +42,9 @@ const items = [
         name: "Tugas Akhir",
         pricelist: [
             {name: "Proposal", price: "300.000"},
-            {name: "Full", price: "2.500.000"},
+            {name: "Full", price: "2.000.000"},
         ],
-        benefits: ["Full Revisi", <>Meet dengan tim <span className={style['text-muted']}>(Offline/Online)</span></>, "Literasi terbaru", "Min 25 kutipan"],
+        benefits: ["Pembuatan Skripsi", "Pembuatan Tesis", "Pembuatan Jurnal", "Pengerjaan Revisian", "Pengerjaan Tugas UAS", "Pengerjaan Tugas Harian", "Pembuatan Power Point"],
         url: "/ta"
     },
     {
@@ -53,25 +53,25 @@ const items = [
             {name: "Tema", price: "50.000"},
             {name: "Custom", price: "200.00"},
         ],
-        benefits: ["Full Revisi", <>Meet dengan tim <span className={style['text-muted']}>(Offline/Online)</span></>, "Literasi terbaru", "Min 25 kutipan"],
+        benefits: ["Undangan Pernihakan", "Undangan Lamaran", "Undangan Khitanan", "Undangan Aqikah", "Undangan Pengajian", "Undangan Acara Musik", "Undangan Acara Sekolah"],
         url: "/undangan"
     },
     {
         name: "Web App",
         pricelist: [
-            {name: "Frontend", price: "300.000"},
-            {name: "Backend", price: "1.000.000"},
+            {name: "Frontend", price: "150.000"},
+            {name: "Backend", price: "200.000"},
         ],
-        benefits: ["Full Revisi", <>Meet dengan tim <span className={style['text-muted']}>(Offline/Online)</span></>, "Literasi terbaru", "Min 25 kutipan"],
+        benefits: ["Web Profil Perusahaan", "Web Toko Online", "Web Portfolio", "Web Landing Page", "Web Home Page", "Web Rest API", "Penambahan Fitur"],
         url: "/apps"
     },
     {
         name: "Mobile App",
         pricelist: [
-            {name: "Frontend", price: "500.000"},
-            {name: "Backend", price: "1.500.000"},
+            {name: "Frontend", price: "300.000"},
+            {name: "Backend", price: "500.000"},
         ],
-        benefits: ["Full Revisi", <>Meet dengan tim <span className={style['text-muted']}>(Offline/Online)</span></>, "Literasi terbaru", "Min 25 kutipan"],
+        benefits: ["Aplikasi Game", "Aplikasi Toko Online", "Aplikasi Musik", "Aplikasi Perhotelan", "Aplikasi Farmasi", "Aplikasi Rest API", "Penambahan Fitur"],
         url: "/apps"
     },
 ]

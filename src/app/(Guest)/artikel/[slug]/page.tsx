@@ -13,7 +13,7 @@ export async function generateMetadata(
             url: `/artikel/${params.slug}`,
             description: '',
             images: '/baseImg.jpg',
-            locale: 'id_ID',
+            locale: 'en_US',
             title: params.slug,
             type: 'article',
             publishedTime: new Date().toLocaleDateString(),

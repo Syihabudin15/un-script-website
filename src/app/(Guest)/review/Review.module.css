@@ -30,6 +30,9 @@
     gap: 10px;
     flex-wrap: wrap;
 }
+.ulsan-item{
+    box-shadow: 3px 3px 5px rgb(222, 222, 222);
+}
 
 
 

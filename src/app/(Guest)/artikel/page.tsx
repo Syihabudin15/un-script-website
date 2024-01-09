@@ -4,11 +4,11 @@ import { CardsArticle, ShortTools } from "../../../../components/Guest/Artikel";
 
 export const metadata: Metadata = {
     title: "Daftar Artikel",
-    description: `Artikel di ${process.env.NEXT_PUBLIC_BASE_NAME} berisi banyak hal, mulai dari Daftar Pustaka Skripsi, Keseharian, Tutorial, IT, Programming, Data Mining, Bisnis, SEO dan lain nya. Bingung cari Dapus? Yo di sini aja`,
+    description: `Artikel di ${process.env.NEXT_PUBLIC_BASE_NAME} berisi banyak hal, mulai dari Daftar Pustaka tugas akhir, Keseharian, Tutorial, IT, Programming, Data Mining, Bisnis, SEO dan lain nya. Bingung cari Dapus? Yo di sini aja`,
     openGraph: {
         url: '/artikel',
         title: "Daftar Artikel",
-        description: `Artikel di ${process.env.NEXT_PUBLIC_BASE_NAME} berisi banyak hal, mulai dari Daftar Pustaka Skripsi, Keseharian, Tutorial, IT, Programming, Data Mining, Bisnis, SEO dan lain nya. Bingung cari Dapus? Yo di sini aja`,
+        description: `Artikel di ${process.env.NEXT_PUBLIC_BASE_NAME} berisi banyak hal, mulai dari Daftar Pustaka tugas akhir, Keseharian, Tutorial, IT, Programming, Data Mining, Bisnis, SEO dan lain nya. Bingung cari Dapus? Yo di sini aja`,
         images: '/baseImg.jpg',
         locale: 'id_ID',
         type: 'article',
